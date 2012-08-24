@@ -1,0 +1,56 @@
+@bgColor: #efefef;
+@mainColor: #444;
+@muted:	#282d30;
+@accent: #fff;
+@borderColor: #1E2124;
+
+body{background-color:@bgColor;}
+.statusBox {
+	ul{
+		list-style-type:none;
+		margin:0;
+	} 
+	form{
+		span{
+			input, select{
+				padding: 5px 10px;
+			}
+			margin:10px 5px;
+			padding:4px 0;
+		}
+	}
+	.submit{
+
+	}
+	.filter{ width:36px;}
+	.title { width:554px;}
+	.start{ width:42px;}
+	.stop{ width:42px;}
+	.status{ width:110px;}	color: #efefef;
+	background-color: @mainColor;
+	margin:0 auto;
+	width:960px;
+}
+.project{
+	li{
+		margin:0 0 5px 0;
+	}
+	span{ 
+		line-height:35px;
+		width:100%;
+		background-color: @muted;
+		border: 1px solid @borderColor;
+		border-radius: 4px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+		margin: 5px;
+		padding: 4px 10px;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+		vertical-align: top;
+		display:inline-block;
+	}
+	// margin: 5px 0;
+
+}
+.statusBox select.status{
+	width:131px;
+}

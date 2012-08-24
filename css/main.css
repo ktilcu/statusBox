@@ -1,0 +1,55 @@
+body {
+  background-color: #efefef;
+}
+.statusBox {
+  color: #efefef;
+  background-color: #444444;
+  margin: 0 auto;
+  width: 960px;
+}
+.statusBox ul {
+  list-style-type: none;
+  margin: 0;
+}
+.statusBox form span {
+  margin: 10px 5px;
+  padding: 4px 0;
+}
+.statusBox form span input,
+.statusBox form span select {
+  padding: 5px 10px;
+}
+.statusBox .filter {
+  width: 36px;
+}
+.statusBox .title {
+  width: 554px;
+}
+.statusBox .start {
+  width: 42px;
+}
+.statusBox .stop {
+  width: 42px;
+}
+.statusBox .status {
+  width: 110px;
+}
+.project li {
+  margin: 0 0 5px 0;
+}
+.project span {
+  line-height: 35px;
+  width: 100%;
+  background-color: #282d30;
+  border: 1px solid #1e2124;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin: 5px;
+  padding: 4px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  display: inline-block;
+}
+.statusBox select.status {
+  width: 131px;
+}

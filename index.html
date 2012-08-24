@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+    <script type="text/javascript" src="projects.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="page statusBox" ng-control="statusBox">
+      <ul>
+        <li class="project">
+          <span class="filter">filter</span>
+          <span class="title">Big long title</span>
+          <span class="start">8/24</span>
+          <span class="stop">8/24</span>
+          <span class="status">Scheduled</span>
+        </li>
+        <li class="project">
+          <span class="filter">filter</span>
+          <span class="title">Big long title</span>
+          <span class="start">8/24</span>
+          <span class="stop">8/24</span>
+          <span class="status">Scheduled</span>
+        </li>
+        <li class="project">
+          <span class="filter">filter</span>
+          <span class="title">Big long title</span>
+          <span class="start">8/24</span>
+          <span class="stop">8/24</span>
+          <span class="status">Scheduled</span>
+        </li>
+      </ul>
+      <form ng-submit="addProject()">
+        <span><input type="text" class="filter" ng-model="filter" placeholder="Filter"></span>
+        <span><input type="text" class="title" ng-model="title" placeholder="Project Title"></span>
+        <span><input type="date" class="start" ng-model="start" placeholder="Project Title"></span>
+        <span><input type="date" class="stop" ng-model="stop" placeholder="Project Title"></span>
+        <span><select type="option" class="status" ng-model="status" placeholder="Project Title"><option value="ahh">ahh</option></select></span>
+        <span class="submit"><input class="btn-primary" type="submit" value="add"></span>
+      </form>
+    </div>
+  </body>
+</html>
