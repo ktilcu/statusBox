@@ -4,9 +4,9 @@ function statusBox($scope) {
     {filter:"project",title:'learn angular', start:"1-5-86", stop: "1-5-86", status: "Completed"},
     {filter:"project",title:'learn angular', start:"1-5-86", stop: "1-5-86", status: "Completed"}];
  
-  $scope.addTodo = function() {
-    $scope.todos.push({text:$scope.todoText, done:false});
-    $scope.todoText = '';
+  $scope.addProject = function() {
+    $scope.projects.push({filter:$scope.filter, title: $scope.title, start: $scope.start, stop: $scope.stop, status: $scope.status});
+    $scope.filter = $scope.title = $scope.start = $scope.stop = $scope.status = '';
   };
  
   $scope.remaining = function() {

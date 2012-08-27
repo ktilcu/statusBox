@@ -6,12 +6,18 @@
 
     <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
     <script type="text/javascript" src="projects.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="page statusBox" ng-control="statusBox">
+    <div class="page statusBox" ng-controller="statusBox">
       <ul>
-        <li class="project">
+        <li ng-repeat="project in projects" class="project">
+          <span class="filter">{{project.filter}}</span>
+          <span class="title">{{project.title}}</span>
+          <span class="start">{{project.start}}</span>
+          <span class="stop">{{project.stop}}</span>
+          <span class="status">{{project.status}}</span>
+        </li>
+        <!-- <li class="project">
           <span class="filter">filter</span>
           <span class="title">Big long title</span>
           <span class="start">8/24</span>
@@ -24,14 +30,7 @@
           <span class="start">8/24</span>
           <span class="stop">8/24</span>
           <span class="status">Scheduled</span>
-        </li>
-        <li class="project">
-          <span class="filter">filter</span>
-          <span class="title">Big long title</span>
-          <span class="start">8/24</span>
-          <span class="stop">8/24</span>
-          <span class="status">Scheduled</span>
-        </li>
+        </li> -->
       </ul>
       <form ng-submit="addProject()">
         <span><input type="text" class="filter" ng-model="filter" placeholder="Filter"></span>
